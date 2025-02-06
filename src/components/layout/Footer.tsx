@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)]">
       <div
-        className="bg-[#4F3EE7B2] rounded-l-full  h-[500px] w-[40vw] blur-[400.33px] absolute w-full top-[-10%] right-0"
+        className="bg-[#4F3EE7B2] rounded-l-full  h-[500px] w-[20vw] blur-[400.33px] absolute w-full top-[-10%] right-0"
         style={{ zIndex: 1 }}
       />
 
