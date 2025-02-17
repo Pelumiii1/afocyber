@@ -22,6 +22,16 @@ const Slider = () => {
       <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
       <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
       <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
+      <Image src={shieldBroken} alt="Security" className="mx-7 w-10 h-10" />
     </Marquee>
   );
 };

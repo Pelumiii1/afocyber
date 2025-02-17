@@ -8,12 +8,12 @@ import print from "../../../public/printSecurity.svg";
 const HeroSection = () => {
   return (
     <div className="z-40 px-[1rem] md:px-[4rem] font-[family-name:var(--font-manrope)] h-[75vh] flex flex-col justify-center items-center relative">
-      <div className="bg-[#D359FF] rounded-r-full h-[200px] w-[300px] blur-[435.33px]  absolute top-[20%] left-0 z-0" />
+      <div className="bg-[#D359FF] rounded-r-full h-[500px] w-[300px] blur-[435.33px] absolute top-[50%] left-0 z-0" />
 
-      <div className="hidden md:flex absolute left-[10rem] top-[11rem]">
+      <div className="hidden md:flex absolute left-0 lg:left-[10rem] top-[11rem]">
         <Image src={target} alt="Target" />
       </div>
-      <div className="hidden md:flex absolute right-[1rem] top-[1rem] z-5">
+      <div className="hidden md:flex absolute right-4 lg:right-[1rem] top-[1rem] z-5">
         <Image src={print} alt="Fingerpint Security" />
       </div>
       <h1 className="light-gradient-text font-extrabold text-[64px] tracking-[-2px] lg:w-[50%] text-center leading-[80px] z-10">

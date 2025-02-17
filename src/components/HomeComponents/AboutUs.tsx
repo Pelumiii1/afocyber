@@ -8,10 +8,10 @@ const AboutUs = () => {
   return (
     <div className="z-40 pb-[3rem] md:pb-0 px-[1rem] pt-[2rem] md:pt-[0rem] md:px-[4rem] flex items-center font-[family-name:var(--font-manrope)] md:h-[80vh] relative">
       <div className="hidden md:flex absolute left-[1rem] ">
-        <Image src={lock} alt="" />
+        <Image src={lock} alt="" className="w-[35rem] lg:w-[40rem]" />
       </div>
       <div className="flex md:justify-end items-center">
-        <div className="w-full md:w-[50%] md:space-y-10 left">
+        <div className="w-full md:w-[60%] lg:w-[50%] md:space-y-10 left">
           <h1 className="light-gradient-text font-extrabold text-[48px] tracking-[-2px] lg:w-[50%] leading-[80px] z-10">
             About Us
           </h1>

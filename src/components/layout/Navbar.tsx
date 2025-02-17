@@ -11,10 +11,10 @@ const Navbar = () => {
       style={{ zIndex: 1000 }}
     >
       <Image src={logo} alt="Afo Cyber Sec" />
-      <div className="hidden md:flex">
+      <div className="hidden md:flex ">
         <NavLinks />
       </div>
-      <div className="border border-white rounded-xl px-2 hidden md:flex gap-2">
+      <div className="border border-white rounded-xl px-2 hidden xl:flex gap-2">
         <Image src={searchIcon} alt="search" />
         <input
           type="text"

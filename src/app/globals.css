@@ -106,10 +106,3 @@ body {
 .img:hover::after {
   transform: translateY(100%);
 }
-
-/* @media only screen and (max-width: 767px) {
-  .image-container {
-    width: 133.33px;
-    height: 216.67px;
-  }
-} */

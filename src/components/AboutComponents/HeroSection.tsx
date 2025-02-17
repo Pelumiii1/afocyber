@@ -26,7 +26,7 @@ const HeroSection = () => {
         style={{ zIndex: 50 }}
       >
         <div
-          className="md:h-[260px] md:w-[40%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-10 ring-1 ring-white/20 text-white md:translate-x-[-10rem]"
+          className="lg:h-[260px] md:w-[50%] lg:w-[40%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-5 lg:p-10 ring-1 ring-white/20 text-white md:translate-x-[-10rem]"
           style={{ zIndex: 50 }}
         >
           <h2 className="text-[26px] font-[700] leading-[35px]">Our Vision</h2>
@@ -39,7 +39,7 @@ const HeroSection = () => {
         </div>
 
         <div
-          className="md:h-[260px] md:w-[40%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-10 ring-1 ring-white/20 text-white md:translate-x-[10rem]"
+          className="lg:h-[260px] md:w-[50%] lg:w-[40%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-5 lg:p-10 ring-1 ring-white/20 text-white md:translate-x-[10rem]"
           style={{ zIndex: 50 }}
         >
           <h2 className="text-[26px] font-[700] leading-[35px]">Our Mission</h2>

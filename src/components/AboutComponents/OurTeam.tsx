@@ -10,13 +10,13 @@ const OurTeam = () => {
         className="hidden md:flex bg-[#4F3EE7B2] absolute h-[530px] w-[530px] right-[-60px] top-[50%] rounded-l-full blur-[435.33px]"
         style={{ zIndex: 1 }}
       />
-      <h1 className="light-gradient-text font-[800] text-[48px] text-center">
+      <h1 className="hidden light-gradient-text font-[800] text-[48px] text-center">
         Our Team
       </h1>
-      <p className="text-center text-[26px] font-[500]">
+      <p className=" hidden text-center text-[26px] font-[500]">
         Meet our experienced individuals
       </p>
-      <div className=" flex justify-between items-center md:grid grid-cols-3 items-start mt-10">
+      <div className="hidden justify-between grid-cols-3 items-start mt-10">
         <div className="opacity-25 hidden md:flex">
           <Image src={ojo} alt="Ojo Akinnisola | Founder/CEO" />
         </div>
@@ -36,13 +36,13 @@ const OurTeam = () => {
 
       <div className="relative flex justify-center items-center pt-[2rem] md:pt-[14rem] mb-[4rem]">
         <div
-          className="hidden md:flex md:absolute left-[8rem] top-[5rem]"
+          className="hidden md:flex md:absolute left-0 lg:left-[8rem] top-0 lg:top-[5rem]"
           style={{ zIndex: 50 }}
         >
           <Image src={pointer} alt="Security" />
         </div>
         <div
-          className="md:w-[50%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-10 ring-1 ring-white/20 text-white"
+          className="lg:w-[50%] backdrop-blur-md bg-white/20 border border-white/25 rounded-[36px] shadow-lg p-10 ring-1 ring-white/20 text-white"
           style={{ zIndex: 10 }}
         >
           <p className="text-[16px] font-[500] leading-[30px]">

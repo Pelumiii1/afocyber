@@ -6,20 +6,20 @@ import securityIcon from "../../../public/3D-security.svg";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 import { BsTwitterX } from "react-icons/bs";
-import afoCyberSec from "../../../public/AfoCyberSec.svg";
+import Marquee from "react-fast-marquee";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)]">
+    <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)] overflow-hidden">
       <div
-        className="bg-[#4F3EE7B2] rounded-l-full  h-[500px] w-[20vw] blur-[400.33px] absolute w-full top-[-10%] right-0"
+        className="bg-[#4F3EE7B2] rounded-l-full  h-[530px] w-[530px] blur-[435.33px] absolute top-[-10%] right-0"
         style={{ zIndex: 1 }}
       />
 
       <div className="z-40">
         <div className="md:flex justify-between items-center">
           <Image src={logo} alt="Afo Cyber Sec" />
-          <div className="md:flex items-center gap-4">
+          <div className="lg:flex items-center gap-4">
             <p className="text-xl text-semibold">Subscribe to our Newsletter</p>
             <div
               className="border border-[#FAFAFA] rounded-xl"
@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="md:flex justify-between items-start mt-1 md:mt-10 ">
           <div className="space-y-5 md:space-y-10 pt-[2rem] md:pt-[5rem]">
             <h2 className="font-semibold text-[26px]">Navigations</h2>
-            <ul className="flex flex-col gap-5 md:gap-10 text-[#FAFAFA80] font-medium text-[16px]">
+            <ul className="flex flex-col gap-5 md:gap-8 text-[#FAFAFA80] font-medium text-[16px]">
               <Link href={"/"}>Home</Link>
               <Link href={"/about"}>About Us</Link>
               <Link href={"/"}>Our Services</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
               <Link href={"/"}>Blog</Link>
               <Link href={"/"}>Contact Us</Link>
             </ul>
-            <div className="hidden md:flex gap-10 items-center pt-[6rem]">
+            <div className="hidden md:flex gap-10 items-center">
               <div className="bg-white p-3 rounded-full w-fit">
                 <BsTwitterX color="black" />
               </div>
@@ -56,8 +56,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:flex z-10">
-            <Image src={securityIcon} alt="Internet Security" height={780} />
+          <div className="hidden lg:flex z-10">
+            <Image src={securityIcon} alt="Internet Security" height={680} />
           </div>
           <div
             className="space-y-5 md:space-y-10 md:text-right pt-[5rem]"
@@ -65,17 +65,25 @@ const Footer = () => {
           >
             <h2 className="font-semibold text-[26px]">Services</h2>
             <ul
-              className="flex flex-col gap-5 md:gap-10 text-[#FAFAFA80] font-medium text-[16px]"
+              className="flex flex-col gap-5 md:gap-8 text-[#FAFAFA80] font-medium text-[16px]"
               style={{ zIndex: 10 }}
             >
               <Link href={"/"}>SOC as a service</Link>
-              <Link href={"/"}>Managed Threat Detection</Link>
-              <Link href={"/"}>Vunerability Management</Link>
-              <Link href={"/"}>Audit & Compliance</Link>
+              <Link href={"/"} className="truncate">
+                Managed Threat Detection
+              </Link>
+              <Link href={"/"} className="truncate">
+                Vunerability Management
+              </Link>
+              <Link href={"/"} className="truncate">
+                Audit & Compliance
+              </Link>
               <Link href={"/"}>Network Security</Link>
-              <Link href={"/"}>Incident Response & Forensics</Link>
+              <Link href={"/"} className="truncate">
+                Incident Response & Forensics
+              </Link>
             </ul>
-            <div className="hidden md:flex gap-10 items-center pt-[6rem] justify-end">
+            <div className="hidden md:flex gap-10 items-center justify-end">
               <div className="bg-white p-2 rounded-full w-fit">
                 <TiSocialInstagram color="black" size="25px" />
               </div>
@@ -83,12 +91,23 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[1rem] md:mt-[-5rem] z-1">
-          <Image
-            src={afoCyberSec}
-            alt="Afo Cyber Sec Solution"
-            className="w-full"
-          />
+        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 h-[30rem] space-y-[-8rem] uppercase">
+          <Marquee className="mt-[-5rem]">
+            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+              Afo Cyber-Sector
+            </p>
+          </Marquee>
+          <Marquee className="">
+            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+              Solutions
+            </p>
+            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+              Solutions
+            </p>
+            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+              Solutions
+            </p>
+          </Marquee>
         </div>
       </div>
     </div>

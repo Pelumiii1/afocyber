@@ -9,8 +9,8 @@ import Image from "next/image";
 const ChooseUs = () => {
   return (
     <div className="relative items-center font-[family-name:var(--font-manrope)] px-[1rem] md:px-[4rem] py-[5rem]">
-      <div className="md:grid grid-cols-2">
-        <div className="md:w-[80%] space-y-5">
+      <div className="lg:grid grid-cols-2">
+        <div className="lg:w-[80%] space-y-5 flex flex-col justify-center">
           <h1 className="light-gradient-text font-extrabold text-[64px] tracking-[-2px] leading-[60px]">
             Why Choose Us
           </h1>
@@ -24,7 +24,7 @@ const ChooseUs = () => {
             regulatory standards.
           </p>
           <div className="h-[10rem]" />
-          <Button className="hidden md:flex">
+          <Button className="hidden lg:flex w-fit">
             <div className="flex items-center justify-center gap-2 py-3 w-full">
               <p>Get Started</p>
               <BsArrowRight size="20px" />

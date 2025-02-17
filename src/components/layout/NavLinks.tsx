@@ -5,12 +5,12 @@ import Link from "next/link";
 const NavLinks = () => {
   const pathname = usePathname();
   return (
-    <ul className="flex items-start gap-5">
+    <ul className="flex items-start gap-5 text-[10px] lg:text-[18px]">
       <Link
         href="/"
         className={`${
           pathname === "/" ? "text-white border-b" : "text-[#FAFAFA80]"
-        }  pb-2 px-4 `}
+        }  pb-2 px-1 lg:px-4 `}
       >
         Home
       </Link>
@@ -18,20 +18,20 @@ const NavLinks = () => {
         href="/about"
         className={`${
           pathname === "/about" ? "text-white border-b " : "text-[#FAFAFA80]"
-        }  pb-2 px-4 `}
+        }  pb-2 px-1 lg:px-4 `}
       >
         About Us
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-4">
+      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Our Services
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-4">
+      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Solution
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-4">
+      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Blogs
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-4">
+      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Contact Us
       </Link>
     </ul>

@@ -6,15 +6,15 @@ import image3 from "../../../public/image3.svg";
 
 const AboutCards = () => {
   return (
-    <div className="hidden md:flex ">
-      <div className=" mb-[5rem] md:grid grid-cols-3 mb-10 px-[1rem] md:px-[4rem] w-full">
+    <div className="hidden lg:flex ">
+      <div className="md:grid grid-cols-2 xl:grid-cols-3 mb-10 px-[1rem] md:px-[4rem] w-full">
         <div className="img">
           <Image src={image1} alt="IT Risk Management" />
         </div>
         <div className="img">
           <Image src={image2} alt="IT Risk Management" />
         </div>
-        <div className="img">
+        <div className="hidden xl:flex img">
           <Image src={image3} alt="IT Risk Management" />
         </div>
       </div>
