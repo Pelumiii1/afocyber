@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 md:h-[30rem] md:space-y-[-8rem] uppercase">
           <Marquee className="md:mt-[-5rem]">
             <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
-              Afo Cyber-Sector
+              Afo Cyber-Sec
             </p>
           </Marquee>
           <Marquee className="">
