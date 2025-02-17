@@ -56,7 +56,7 @@ const OurServices = () => {
         </div>
 
         <div className="flex flex-col items-center justify-between">
-          <div className="hidden lg:flex text-center leading-[60px]">
+          <div className="hidden lg:flex flex-col items-center text-center leading-[60px]">
             <h1 className="light-gradient-text font-extrabold text-[64px] tracking-[-2px]">
               Our Services
             </h1>
