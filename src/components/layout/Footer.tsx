@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)] overflow-hidden">
       <div
-        className="bg-[#4F3EE7B2] rounded-l-full  h-[530px] w-[530px] blur-[435.33px] absolute top-[-10%] right-0"
+        className="bg-[#4F3EE7B2] rounded-l-full  h-[530px] w-[530px] blur-[435.33px] absolute top-[-10%] right-0 hidden md:flex"
         style={{ zIndex: 1 }}
       />
 
@@ -91,20 +91,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 h-[30rem] space-y-[-8rem] uppercase">
-          <Marquee className="mt-[-5rem]">
-            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 md:h-[30rem] md:space-y-[-8rem] uppercase">
+          <Marquee className="md:mt-[-5rem]">
+            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Afo Cyber-Sector
             </p>
           </Marquee>
           <Marquee className="">
-            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
-            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
-            <p className="text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
           </Marquee>

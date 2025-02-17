@@ -23,7 +23,7 @@ const ChooseUs = () => {
             Monitoring, to provide a secure environment that meets and exceeds
             regulatory standards.
           </p>
-          <div className="h-[10rem]" />
+          <div className="hidden md:flex h-[10rem]" />
           <Button className="hidden lg:flex w-fit">
             <div className="flex items-center justify-center gap-2 py-3 w-full">
               <p>Get Started</p>

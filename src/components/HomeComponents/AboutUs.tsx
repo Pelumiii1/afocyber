@@ -15,7 +15,7 @@ const AboutUs = () => {
           <h1 className="light-gradient-text font-extrabold text-[48px] tracking-[-2px] lg:w-[50%] leading-[80px] z-10">
             About Us
           </h1>
-          <div className="space-y-2">
+          <div className="space-y-2 mb-4">
             <p className="text-white font-[600] text-[26px]">
               Established with a goal to deliver top-notch cybersecurity
               solutions
