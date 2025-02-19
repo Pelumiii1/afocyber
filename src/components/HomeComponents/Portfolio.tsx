@@ -8,7 +8,10 @@ import marketing from "../../../public/marketing.svg";
 const Portfolio = () => {
   const [isActive, setIsActive] = useState("");
   return (
-    <div className="relative flex flex-col justify-center items-center px-[4rem] p-5 text-white font-[family-name:var(--font-manrope)] xl:h-[100vh]">
+    <div
+      id="portfolio"
+      className="relative flex flex-col justify-center items-center px-[4rem] p-5 text-white font-[family-name:var(--font-manrope)] xl:h-[100vh]"
+    >
       <div className="z-40">
         <div className="text-center leading-[50px]">
           <h1 className="light-gradient-text font-extrabold text-[64px] tracking-[-2px]">
@@ -18,7 +21,7 @@ const Portfolio = () => {
             Our Latest Case Studies
           </p>
         </div>
-        <div className="mt-10 md:flex flex-wrap items-center xl:items-start gap-[5rem] justify-center lg:justify-between">
+        <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-[5rem] justify-center ">
           <div
             className="flex flex-col justify-center items-center"
             onMouseEnter={() => setIsActive("business")}

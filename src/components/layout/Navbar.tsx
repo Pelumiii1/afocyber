@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav
-      className="flex justify-between items-center fixed top-0 w-full h-[15vh] bg-[#1B043A] p-5 px-[1rem] md:px-[4rem] font-[family-name:var(--font-manrope)] z-[100]"
+      className="flex justify-between items-center w-full h-[15vh] bg-[#1B043A] p-5 px-[1rem] md:px-[4rem] font-[family-name:var(--font-manrope)] z-[100]"
       style={{ zIndex: 1000 }}
     >
       <Image src={logo} alt="Afo Cyber Sec" />
@@ -46,16 +46,16 @@ const Navbar = () => {
             <Link href="/about" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
+            <Link href={"/our-services"} onClick={() => setIsOpen(false)}>
               Our Services
             </Link>
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
+            <Link href={"/#portfolio"} onClick={() => setIsOpen(false)}>
               Solution
             </Link>
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
+            {/* <Link href={"/"} onClick={() => setIsOpen(false)}>
               Blogs
-            </Link>
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
+            </Link> */}
+            <Link href={"/contact-us"} onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
           </nav>
@@ -79,7 +79,7 @@ const Navbar = () => {
           type="text"
           placeholder="Search"
           className="placeholder:text-white text-white outline-none bg-transparent py-2"
-          style={{ zIndex: 1000 }}
+          style={{ zIndex: 10 }}
         />
       </div>
     </nav>

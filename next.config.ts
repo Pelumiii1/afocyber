@@ -9,8 +9,9 @@ const nextConfig: NextConfig = {
           // {
           //   key: "Content-Security-Policy",
           //   value:
-          //     "default-src 'self'; script-src 'self' 'unsafe-inline' https://afocyber.vercel.app/; object-src 'none'; frame-ancestors 'none';",
+          //     "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.afocybersec.com/; object-src 'none'; frame-ancestors 'none';",
           // },
+
           {
             key: "X-Frame-Options",
             value: "DENY",

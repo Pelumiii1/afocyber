@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavLinks = () => {
   const pathname = usePathname();
   return (
-    <ul className="flex items-start gap-5 text-[10px] lg:text-[18px]">
+    <ul className="flex items-start gap-5 text-[10px] md:text-[18px]">
       <Link
         href="/"
         className={`${
@@ -22,16 +22,19 @@ const NavLinks = () => {
       >
         About Us
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
+      <Link
+        href={"/our-services"}
+        className="text-[#FAFAFA80] pb-2 px-1 lg:px-4"
+      >
         Our Services
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
+      <Link href={"/#portfolio"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Solution
       </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
+      {/* <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Blogs
-      </Link>
-      <Link href={"/"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
+      </Link> */}
+      <Link href={"/contact-us"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Contact Us
       </Link>
     </ul>

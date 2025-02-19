@@ -22,13 +22,13 @@ const Footer = () => {
           <div className="lg:flex items-center gap-4">
             <p className="text-xl text-semibold">Subscribe to our Newsletter</p>
             <div
-              className="border border-[#FAFAFA] rounded-xl"
+              className="border border-[#FAFAFA] rounded-xl flex"
               style={{ zIndex: 10 }}
             >
               <input
                 type="email"
                 placeholder="Email"
-                className="bg-transparent placeholder:text-[#FAFAFA4D] font-medium pl-4 py-2 w-[71vw] md:w-[30vw] outline-none"
+                className="bg-transparent placeholder:text-[#FAFAFA4D] font-medium pl-4 py-2 w-full  lg:w-[40vw] outline-none"
               />
               <button className="bg-white px-5 py-2 rounded-r-lg text-black text-medium text-[18px] ">
                 Submit
@@ -42,10 +42,10 @@ const Footer = () => {
             <ul className="flex flex-col gap-5 md:gap-8 text-[#FAFAFA80] font-medium text-[16px]">
               <Link href={"/"}>Home</Link>
               <Link href={"/about"}>About Us</Link>
-              <Link href={"/"}>Our Services</Link>
+              <Link href={"/our-services"}>Our Services</Link>
               <Link href={"/"}>Solutions</Link>
-              <Link href={"/"}>Blog</Link>
-              <Link href={"/"}>Contact Us</Link>
+              {/* <Link href={"/"}>Blog</Link> */}
+              <Link href={"/contact-us"}>Contact Us</Link>
             </ul>
             <div className="hidden md:flex gap-10 items-center">
               <div className="bg-white p-3 rounded-full w-fit">
@@ -68,18 +68,18 @@ const Footer = () => {
               className="flex flex-col gap-5 md:gap-8 text-[#FAFAFA80] font-medium text-[16px]"
               style={{ zIndex: 10 }}
             >
-              <Link href={"/"}>SOC as a service</Link>
-              <Link href={"/"} className="truncate">
+              <Link href={"/our-services"}>SOC as a service</Link>
+              <Link href={"/our-serivces"} className="truncate">
                 Managed Threat Detection
               </Link>
-              <Link href={"/"} className="truncate">
+              <Link href={"/our-services"} className="truncate">
                 Vunerability Management
               </Link>
-              <Link href={"/"} className="truncate">
+              <Link href={"/our-services"} className="truncate">
                 Audit & Compliance
               </Link>
-              <Link href={"/"}>Network Security</Link>
-              <Link href={"/"} className="truncate">
+              <Link href={"/our-services"}>Network Security</Link>
+              <Link href={"/our-services"} className="truncate">
                 Incident Response & Forensics
               </Link>
             </ul>

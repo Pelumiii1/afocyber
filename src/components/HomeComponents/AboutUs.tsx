@@ -1,16 +1,21 @@
+"use client";
 import React from "react";
 import Button from "../ui/button";
 import { BsArrowRight } from "react-icons/bs";
 import lock from "../../../public/lockSecurity.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
     <div className="z-40 pb-[3rem] md:pb-0 px-[1rem] pt-[2rem] md:pt-[0rem] md:px-[4rem] flex items-center font-[family-name:var(--font-manrope)] md:h-[80vh] relative">
-      <div className="hidden md:flex absolute left-[1rem] ">
+      <div
+        className="hidden md:flex absolute left-[1rem]"
+        style={{ zIndex: 1 }}
+      >
         <Image src={lock} alt="" className="w-[35rem] lg:w-[40rem]" />
       </div>
-      <div className="flex md:justify-end items-center">
+      <div className="flex md:justify-end items-center" style={{ zIndex: 100 }}>
         <div className="w-full md:w-[60%] lg:w-[50%] md:space-y-10 left">
           <h1 className="light-gradient-text font-extrabold text-[48px] tracking-[-2px] lg:w-[50%] leading-[80px] z-10">
             About Us
@@ -30,11 +35,16 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <Button>
-            <div className="flex items-center gap-2 py-3 px-5">
+          <Button className="w-fit">
+            <Link
+              href="/about"
+              className="flex items-center gap-2 py-3 px-5"
+              onClick={() => console.log("clicked")}
+              style={{ zIndex: 100 }}
+            >
               <p>Learn More</p>
               <BsArrowRight size="20px" />
-            </div>
+            </Link>
           </Button>
         </div>
       </div>
