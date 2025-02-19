@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable}`}>
+        <Analytics />
         <Navbar />
         <div className="">{children}</div>
         <Footer />
