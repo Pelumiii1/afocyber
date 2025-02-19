@@ -5,7 +5,7 @@ import riskManagement from "../../../../public/riskManagement.svg";
 const RiskManagement = () => {
   return (
     <div className="bg-[#1B043A] font-[family-name:var(--font-manrope)] p-5 text-white flex flex-col justify-center items-center">
-      <h1 className="light-gradient-text font-extrabold text-[64px] text-center">
+      <h1 className="light-gradient-text font-extrabold text-[40px] md:text-[64px] text-center">
         IT Risk Management
       </h1>
       <p className="lg:w-[70%] text-center text-[20px] mb-5">
