@@ -48,8 +48,10 @@ const OurServices = () => {
                 </p>
               </div>
               <p className="text-[#808080] font-[600] text-[12px] lg:text-[16px] my-3 line-clamp-3">
-                AFO Solution is dedicated to ensuring organizations proactively
-                manage IT risks without exceeding…
+                Enhance your security with our SOC as a Service—24/7 threat
+                monitoring, real-time incident response, and advanced threat
+                intelligence. We protect your business from cyber threats,
+                ensuring compliance and resilience.
               </p>
             </div>
 
