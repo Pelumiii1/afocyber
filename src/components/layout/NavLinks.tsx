@@ -24,7 +24,11 @@ const NavLinks = () => {
       </Link>
       <Link
         href={"/our-services"}
-        className="text-[#FAFAFA80] pb-2 px-1 lg:px-4"
+        className={`${
+          pathname.includes("our-services")
+            ? "text-white border-b "
+            : "text-[#FAFAFA80]"
+        }  pb-2 px-1 lg:px-4 `}
       >
         Our Services
       </Link>

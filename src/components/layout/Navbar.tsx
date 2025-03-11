@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import logo from "../../../public/afoLogo.svg";
+import logoTest from "../../../public/logo-test.png";
 import NavLinks from "./NavLinks";
 import searchIcon from "../../../public/searchIcon.svg";
 import { BiMenu } from "react-icons/bi";
@@ -14,7 +15,7 @@ const Navbar = () => {
       className="flex justify-between items-center w-full h-[15vh] bg-[#1B043A] p-5 px-[1rem] md:px-[4rem] font-[family-name:var(--font-manrope)] z-[100]"
       style={{ zIndex: 1000 }}
     >
-      <Image src={logo} alt="Afo Cyber Sec" />
+      <Image src={logoTest} alt="Afo Cyber Sec" className="h-[5rem] w-[6rem]" />
       <div className="flex md:hidden">
         <button
           className="p-2 text-gray-700 dark:text-white"
