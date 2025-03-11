@@ -15,7 +15,11 @@ const Navbar = () => {
       className="flex justify-between items-center w-full h-[15vh] bg-[#1B043A] p-5 px-[1rem] md:px-[4rem] font-[family-name:var(--font-manrope)] z-[100]"
       style={{ zIndex: 1000 }}
     >
-      <Image src={logoTest} alt="Afo Cyber Sec" className="h-[5rem] w-[6rem]" />
+      <Image
+        src={logoTest}
+        alt="Afo Cyber Sec"
+        className="h-[5.5rem] w-[8rem]"
+      />
       <div className="flex md:hidden">
         <button
           className="p-2 text-gray-700 dark:text-white"
