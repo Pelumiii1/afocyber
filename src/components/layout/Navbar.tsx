@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "../../../public/afoLogo.svg";
+// import logo from "../../../public/afoLogo.svg";
 import logoTest from "../../../public/logo-test.png";
 import NavLinks from "./NavLinks";
 import searchIcon from "../../../public/searchIcon.svg";
