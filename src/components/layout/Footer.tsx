@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../../../public/afoLogo.svg";
+import logo from "../../../public/logo-test.png";
 import Link from "next/link";
 import securityIcon from "../../../public/3D-security.svg";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
