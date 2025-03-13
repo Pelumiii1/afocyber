@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
             value:
               "default-src 'self'; " +
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.afocybersec.com/;" +
-              "style-src 'self' 'unsafe-hashes' 'sha256-H5qzvmO5xccTguDYODhfAHSPc8+38Qr6Ua/9LSDtNa0='; " +
+              "style-src 'self' 'unsafe-inline'" +
               "object-src 'none';" +
               "frame-ancestors 'none';",
           },
