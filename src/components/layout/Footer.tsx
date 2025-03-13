@@ -11,6 +11,7 @@ import Marquee from "react-fast-marquee";
 const Footer = () => {
   return (
     <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)] overflow-hidden">
+      {/* Overlay  */}
       <div
         className="bg-[#4F3EE7B2] rounded-l-full  h-[530px] w-[530px] blur-[435.33px] absolute top-[-10%] right-0 hidden md:flex"
         style={{ zIndex: 1 }}
@@ -36,7 +37,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex justify-between items-start mt-1 md:mt-10 ">
+
+        <div className="md:flex justify-between items-start mt-1 md:mt-6">
           <div className="space-y-5 md:space-y-10 pt-[2rem] md:pt-[5rem]">
             <h2 className="font-semibold text-[26px]">Navigations</h2>
             <ul className="flex flex-col gap-5 md:gap-8 text-[#FAFAFA80] font-medium text-[16px]">
@@ -56,9 +58,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
+          {/* Big Shield Icon  */}
           <div className="hidden lg:flex z-10">
-            <Image src={securityIcon} alt="Internet Security" height={680} />
+            <Image src={securityIcon} alt="Internet Security" height={580} />
           </div>
+
           <div
             className="space-y-5 md:space-y-10 md:text-right pt-[5rem]"
             style={{ zIndex: 10 }}
@@ -79,9 +84,6 @@ const Footer = () => {
                 Audit & Compliance
               </Link>
               <Link href={"/our-services"}>Network Security</Link>
-              <Link href={"/our-services"} className="truncate">
-                Incident Response & Forensics
-              </Link>
             </ul>
             <div className="hidden md:flex gap-10 items-center justify-end">
               <div className="bg-white p-2 rounded-full w-fit">
@@ -91,20 +93,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 md:h-[30rem] md:space-y-[-8rem] uppercase">
-          <Marquee className="md:mt-[-5rem]">
-            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+
+        {/* Scroll  */}
+        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 md:h-[12rem] md:space-y-[-4rem] uppercase">
+          <Marquee className="md:mt-[-2rem]">
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Afo Cyber-Sec
             </p>
           </Marquee>
           <Marquee className="">
-            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
-            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
-            <p className="text-[100px] md:text-[250px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
               Solutions
             </p>
           </Marquee>
