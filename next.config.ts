@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value:
               "default-src 'self'; " +
-              "script-src 'self' 'unsafe-inline' https://www.afocybersec.com/;" +
-              "style-src 'self' 'sha256-H5qzvmO5xccTguDYODhfAHSPc8+38Qr6Ua/9LSDtNa0='; " +
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.afocybersec.com/;" +
+              "style-src 'self' 'unsafe-hashes' 'sha256-H5qzvmO5xccTguDYODhfAHSPc8+38Qr6Ua/9LSDtNa0='; " +
               "object-src 'none';" +
               "frame-ancestors 'none';",
           },
