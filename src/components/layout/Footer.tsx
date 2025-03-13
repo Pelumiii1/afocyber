@@ -61,11 +61,11 @@ const Footer = () => {
 
           {/* Big Shield Icon  */}
           <div className="hidden lg:flex z-10">
-            <Image src={securityIcon} alt="Internet Security" height={580} />
+            <Image src={securityIcon} alt="Internet Security" height={450} />
           </div>
 
           <div
-            className="space-y-5 md:space-y-10 md:text-right pt-[5rem]"
+            className="space-y-5 md:space-y-10 md:text-right pt-[2rem] md:pt-[5rem]"
             style={{ zIndex: 10 }}
           >
             <h2 className="font-semibold text-[26px]">Services</h2>
@@ -95,21 +95,19 @@ const Footer = () => {
         </div>
 
         {/* Scroll  */}
-        <div className="mt-[1rem] md:mt-0 xl:mt-[-5rem] z-1 border-2 md:h-[12rem] md:space-y-[-4rem] uppercase">
+        <div className="mt-[1rem] md:mt-0 xl:mt-[1rem] z-1 border-2 md:h-[6rem] md:space-y-[-4rem] uppercase">
           <Marquee className="md:mt-[-2rem]">
-            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
-              Afo Cyber-Sec
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-5 tracking-[-8%]">
+              Afo Cyber-Sec Solution
             </p>
-          </Marquee>
-          <Marquee className="">
-            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
-              Solutions
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-5 tracking-[-8%]">
+              Afo Cyber-Sec Solution
             </p>
-            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
-              Solutions
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-5 tracking-[-8%]">
+              Afo Cyber-Sec Solution
             </p>
-            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-10 tracking-[-8%]">
-              Solutions
+            <p className="text-[100px] md:text-[100px] font-extrabold light-gradient-text mx-5 tracking-[-8%]">
+              Afo Cyber-Sec Solution
             </p>
           </Marquee>
         </div>
