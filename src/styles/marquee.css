@@ -1,0 +1,22 @@
+/* styles/marquee.css */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  /* Start with enough padding so the text is offscreen */
+  padding-left: 100%;
+  animation: marquee-animation 10s linear infinite;
+}
+
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

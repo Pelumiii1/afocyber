@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
             value:
               "default-src 'self'; " +
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.afocybersec.com/;" +
-              "style-src 'self' 'unsafe-inline'" +
+              "script-src-elem 'self' 'unsafe-inline' https://va.vercel-scripts.com/v1/script.debug.js;" +
+              "style-src 'self' 'unsafe-inline';" +
               "object-src 'none';" +
               "frame-ancestors 'none';",
           },
