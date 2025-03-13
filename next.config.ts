@@ -6,12 +6,11 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)", // Apply to all routes
         headers: [
-          // {
-          //   key: "Content-Security-Policy",
-          //   value:
-          //     "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.afocybersec.com/; object-src 'none'; frame-ancestors 'none';",
-          // },
-
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.afocybersec.com/; object-src 'none'; frame-ancestors 'none';",
+          },
           {
             key: "X-Frame-Options",
             value: "DENY",
