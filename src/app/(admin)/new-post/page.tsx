@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NewPostPage = () => {
   return (
-    <div className="p-10 pt-0 lg:pt-10">
+    <div className="pt-0 px-3 lg:p-10">
       <div className="flex lg:hidden mb-4">
         <Link href="/dashboard" className="text-black flex items-center gap-3">
           <ArrowLeft />
