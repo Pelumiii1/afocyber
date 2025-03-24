@@ -1,15 +1,21 @@
 "use client";
 
+import { supabase } from "@/lib/supabaseClient";
+import useUserStore from "@/store/userStore";
+import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { FaPlus } from "react-icons/fa";
 import { LuHouse } from "react-icons/lu";
+import { TbLogout } from "react-icons/tb";
 
 const AdminNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
   const pathname = usePathname();
+  const setUser = useUserStore((state) => state.setUser);
 
   const navigation = [
     {
@@ -29,6 +35,12 @@ const AdminNavbar = () => {
     // },
   ];
 
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+    router.push("/");
+  };
+
   return (
     <div className="flex lg:hidden">
       <button
@@ -45,35 +57,47 @@ const AdminNavbar = () => {
         } transition-transform duration-300 ease-in-out`}
         style={{ zIndex: 100 }}
       >
-        <div className="p-4 flex justify-between items-center border-gray-200 dark:border-gray-800">
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {/* Sidebar */}
-          </h2>
+        <div className="p-4 flex justify-between items-center border-gray-200 dark:border-gray-800 h-[15vh]">
+          <div className="">
+            <Image src="/logo-test.png" alt="" width={50} height={50} />
+          </div>
           <button onClick={() => setIsOpen(false)} className="text-white">
             X
           </button>
         </div>
+        <div className="p-4 flex flex-col justify-between h-[85vh]">
+          <div>
+            <nav className="space-y-3">
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`flex items-center px-4 py-2 text-sm font-medium rounded-md w-fit ${
+                      isActive
+                        ? "bg-indigo-50 text-indigo-700"
+                        : "text-white hover:bg-gray-50 hover:text-gray-900"
+                    }`}
+                  >
+                    <span className="mr-3">{item.icon}</span>
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
 
-        <nav className="mt-4 space-y-3 px-4 flex flex-col text-white">
-          {navigation.map((item) => {
-            const isActive = pathname === item.href;
-            return (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className={`flex items-center px-4 py-2 text-sm font-medium rounded-md w-fit ${
-                  isActive
-                    ? "bg-indigo-50 text-indigo-700"
-                    : "text-white hover:bg-gray-50 hover:text-gray-900"
-                }`}
-              >
-                <span className="mr-3">{item.icon}</span>
-                {item.name}
-              </Link>
-            );
-          })}
-        </nav>
+          <div className="w-[var(--sidebar-width)] p-4 border-gray-200">
+            <button
+              onClick={handleLogout}
+              className="flex items-center px-4 py-2 text-sm font-medium text-white rounded-md gap-2 hover:bg-gray-50 hover:text-gray-900 w-fit"
+            >
+              <TbLogout size={25} />
+              Logout
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Overlay */}
