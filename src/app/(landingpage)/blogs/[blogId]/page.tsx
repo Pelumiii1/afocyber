@@ -27,10 +27,12 @@ const SinglePost = async ({
         <p>Back</p>
       </Link>
       <div className="flex flex-col justify-center w-full items-center">
-        <h1 className="text-center light-gradient-text font-extrabold text-[44px] w-[60%]">
+        <h1 className="text-center light-gradient-text font-extrabold text-[44px] w-[90%] lg:w-[60%]">
           {data.title}
         </h1>
-        <p className="italic mb-5 text-center w-[50%]">{data.description}</p>
+        <p className="italic mb-5 text-center w-[90%] lg:w-[50%]">
+          {data.description}
+        </p>
       </div>
 
       <div className="mb-5 flex justify-center">
