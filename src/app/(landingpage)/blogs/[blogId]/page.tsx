@@ -4,7 +4,13 @@ import Link from "next/link";
 import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 
-const SinglePost = async ({ params }: { params: { blogId: string } }) => {
+type Props = {
+  params: {
+    blogId: string;
+  };
+};
+
+const SinglePost = async ({ params }: Props) => {
   const { data, error } = await supabase
     .from("posts")
     .select("*")
