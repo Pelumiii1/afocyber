@@ -4,18 +4,16 @@ import Link from "next/link";
 import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 
-interface PageProps {
-  params: {
-    blogId: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-const SinglePost = async ({ params }: PageProps) => {
+const SinglePost = async ({
+  params,
+}: {
+  params: Promise<{ blogId: string }>;
+}) => {
+  const { blogId } = await params;
   const { data, error } = await supabase
     .from("posts")
     .select("*")
-    .eq("id", params.blogId)
+    .eq("id", blogId)
     .single();
 
   if (error || !data) {
