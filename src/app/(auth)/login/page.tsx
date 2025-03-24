@@ -6,7 +6,7 @@ import React from "react";
 const LoginPage = () => {
   return (
     <div className="bg-gradient-to-br from-[#1B043A] to-[#2a0655] min-h-screen">
-      <div className="pt-5 h-[15vh]">
+      <div className="pt-5 h-[7vh] md:h-[15vh]">
         <Link href="/" className="p-5  text-white flex items-center gap-3">
           <ArrowLeft />
           Back

@@ -30,13 +30,10 @@ export const LoginForm = () => {
     });
     if (error) {
       setError(true);
-      console.log(error);
       setLoading(false);
       return;
     }
 
-    setLoading(false);
-    console.log(data);
     setError(false);
     router.push("/dashboard");
   };

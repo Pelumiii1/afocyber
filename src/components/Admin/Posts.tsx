@@ -53,32 +53,37 @@ export default function Posts() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 grid grid-cols-1 md:grid-cols-1">
       {posts.map((post) => (
         <div
           key={post.id}
-          className="border shadow-md rounded-lg w-full hover:shadow-xl cursor-pointer bg-white transition-all duration-500 flex"
+          className="border shadow-md rounded-lg w-full hover:shadow-xl cursor-pointer bg-white transition-all duration-500 md:flex"
         >
-          <RemoteImage
-            path={post.image_url}
-            alt={post.title}
-            width={200}
-            height={100}
-          />
+          <div className="flex justify-center">
+            <RemoteImage
+              path={post.image_url}
+              alt={post.title}
+              width={400}
+              height={100}
+            />
+          </div>
+
           <div>
             <div className="p-5">
-              <h1 className="text-[18px] font-medium text-gray-900 line-clamp-2">
+              <h1 className="text-[12px] md:text-[18px] font-bold text-gray-900 line-clamp-2">
                 {post.title}
               </h1>
-              <p className="mt-1 line-clamp-2">{post.description}</p>
+              <p className="mt-1 line-clamp-2 text-[10px] md:text-[18px] mb-3">
+                {post.description}
+              </p>
 
               <div
                 dangerouslySetInnerHTML={{ __html: post.content }}
-                className="prose max-w-none line-clamp-3"
+                className="prose max-w-none line-clamp-3 text-[12px] md:text-[15px]"
               />
             </div>
 
-            <div className="flex justify-end gap-5 p-5">
+            <div className="flex flex-wrap justify-end gap-5 p-5">
               <button
                 onClick={() => handlePostClick(post)}
                 className="flex items-center gap-1"
