@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[#1B043A] text-white p-5 px-1 md:px-[4rem] font-[family-name:var(--font-manrope)] overflow-hidden">
+    <div className="relative bg-[#1B043A] text-white p-5 px-[1rem] lg:px-[4rem] font-[family-name:var(--font-manrope)] overflow-hidden">
       {/* Overlay  */}
       <div
         className="bg-[#4F3EE7B2] rounded-l-full  h-[530px] w-[530px] blur-[435.33px] absolute top-[-10%] right-0 hidden md:flex"
@@ -16,7 +16,7 @@ const Footer = () => {
       />
 
       <div className="z-40">
-        <div className="md:flex justify-between items-center">
+        <div className="md:flex justify-between items-center space-y-5 md:space-y-0">
           <Image
             src="/logo-test.png"
             alt="Afo Cyber Sec"
@@ -49,7 +49,7 @@ const Footer = () => {
               <Link href={"/about"}>About Us</Link>
               <Link href={"/our-services"}>Our Services</Link>
               <Link href={"/"}>Solutions</Link>
-              {/* <Link href={"/"}>Blog</Link> */}
+              <Link href={"/blogs"}>Blog</Link>
               <Link href={"/contact-us"}>Contact Us</Link>
             </ul>
             <div className="hidden md:flex gap-10 items-center">

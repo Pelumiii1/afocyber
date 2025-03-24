@@ -5,7 +5,7 @@ const ContactUsPage = () => {
   return (
     <div className="flex flex-col justify-center items-center relative">
       {/* <div className="bg-[#D359FF] hidden md:flex rounded-r-full h-[500px] w-[300px] blur-[435.33px] absolute top-[50%] left-0" /> */}
-      <h1 className="light-gradient-text font-extrabold text-[64px] text-center leading-tight">
+      <h1 className="light-gradient-text font-extrabold text-[64px] text-center leading-none mb-7">
         Our Locations
       </h1>
       <div className="flex flex-col justify-center items-center w-full">
@@ -21,6 +21,7 @@ const ContactUsPage = () => {
           <Phone size="30px" />
           <a href="tel:+2349121287092">+2349121287092</a>
         </p>
+        <div className="border-t my-5 border-red-600" />
         <p className="lg:w-[70%] text-center text-[20px] flex md:space-x-10 justify-center">
           {/* <MapPin size="30px" /> */}
           <span>

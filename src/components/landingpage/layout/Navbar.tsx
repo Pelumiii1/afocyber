@@ -62,7 +62,7 @@ const Navbar = () => {
             <Link href={"/contact-us"} onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
-            <Link href={"/contact-us"} onClick={() => setIsOpen(false)}>
+            <Link href={"/login"} onClick={() => setIsOpen(false)}>
               Login
             </Link>
           </nav>
