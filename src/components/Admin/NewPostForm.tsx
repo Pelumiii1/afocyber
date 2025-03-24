@@ -159,7 +159,7 @@ const NewPostForm = () => {
   return (
     <div>
       <form
-        className="space-y-5 mt-10 w-full lg:w-[50vw] text-[12px]"
+        className="space-y-5 my-10 w-full lg:w-[50vw] text-[12px]"
         onSubmit={handleSubmit}
       >
         <div className="grid">

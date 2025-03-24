@@ -65,7 +65,7 @@ const AdminNavbar = () => {
             X
           </button>
         </div>
-        <div className="p-4 flex flex-col justify-between h-[85vh]">
+        <div className="p-4 flex flex-col justify-between h-[75vh]">
           <div>
             <nav className="space-y-3">
               {navigation.map((item) => {
