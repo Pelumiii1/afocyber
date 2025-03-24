@@ -1,6 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "enfljdkmzihffiegdvfz.supabase.co",
+      },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+    ],
+  },
+
   async headers() {
     return [
       {
@@ -10,10 +23,11 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value:
               "default-src 'self'; " +
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.afocybersec.com/;" +
-              "script-src-elem 'self' 'unsafe-inline' https://va.vercel-scripts.com/v1/script.debug.js;" +
-              "style-src 'self' 'unsafe-inline';" +
-              "object-src 'none';" +
+              "connect-src 'self' https://enfljdkmzihffiegdvfz.supabase.co; " +
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.afocybersec.com/ https://va.vercel-scripts.com; " +
+              "style-src 'self' 'unsafe-inline'; " +
+              "img-src 'self' blob: data: https://enfljdkmzihffiegdvfz.supabase.co https://placehold.co;" +
+              "object-src 'none'; " +
               "frame-ancestors 'none';",
           },
           {
