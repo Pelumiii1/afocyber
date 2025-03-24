@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../public/services-06.jpg";
 
 const Page = () => {
   return (
@@ -13,7 +12,7 @@ const Page = () => {
         monitoring, and intrusion detection services.
       </p>
       <Image
-        src={img}
+        src="/services-06.jpg"
         alt="Managed Firewall and Network Security"
         width={800}
       />

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../public/services-05.jpg";
 
 const Page = () => {
   return (
@@ -13,7 +12,11 @@ const Page = () => {
         containment, forensic analysis, and post-incident recommendations and
         lessons learned.
       </p>
-      <Image src={img} alt="Incident Response and Forensics" width={800} />
+      <Image
+        src="/services-05.jpg"
+        alt="Incident Response and Forensics"
+        width={800}
+      />
     </div>
   );
 };

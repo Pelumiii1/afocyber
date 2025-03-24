@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../public/Compliance.jpg";
 
 const Page = () => {
   return (
@@ -14,7 +13,7 @@ const Page = () => {
         frameworks. Our approach treats regulatory and industry standard as the
         minimum requirements; we go a step further to stay ahead of compliance.
       </p>
-      <Image src={img} alt="Compliance Management" width={800} />
+      <Image src="/Compliance.jpg" alt="Compliance Management" width={800} />
     </div>
   );
 };
