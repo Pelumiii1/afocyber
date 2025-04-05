@@ -41,12 +41,12 @@ const NavLinks = () => {
       <Link href={"/contact-us"} className="text-[#FAFAFA80] pb-2 px-1 lg:px-4">
         Contact Us
       </Link>
-      <Link
-        href={"/login"}
-        className="text-white px-7 py-1 mb-2 border rounded-xl lg:ml-20"
-      >
-        Login
-      </Link>
+      {/*<Link*/}
+      {/*  href={"/login"}*/}
+      {/*  className="text-white px-7 py-1 mb-2 border rounded-xl lg:ml-20"*/}
+      {/*>*/}
+      {/*  Login*/}
+      {/*</Link>*/}
     </ul>
   );
 };
