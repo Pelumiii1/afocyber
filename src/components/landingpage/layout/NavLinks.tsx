@@ -17,7 +17,7 @@ const NavLinks = () => {
       <Link
         href="/about"
         className={`${
-          pathname === "/about" ? "text-white border-b " : "text-[#FAFAFA80]"
+          pathname === "/about" ? "text-white border-b" : "text-[#FAFAFA80]"
         }  pb-2 px-1 lg:px-4 `}
       >
         About Us

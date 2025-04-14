@@ -62,9 +62,6 @@ const Navbar = () => {
             <Link href={"/contact-us"} onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
-            <Link href={"/login"} onClick={() => setIsOpen(false)}>
-              Login
-            </Link>
           </nav>
         </div>
 
@@ -80,15 +77,6 @@ const Navbar = () => {
       <div className="hidden md:flex ">
         <NavLinks />
       </div>
-      {/* <div className="border border-white rounded-xl px-2 hidden xl:flex gap-2">
-        <Image src="/searchIcon.svg" alt="search" width={30} height={30} />
-        <input
-          type="text"
-          placeholder="Search"
-          className="placeholder:text-white text-white outline-none bg-transparent py-2"
-          style={{ zIndex: 10 }}
-        />
-      </div> */}
     </nav>
   );
 };
